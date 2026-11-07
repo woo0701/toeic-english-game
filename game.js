@@ -2,36 +2,36 @@ const STAGES = [
   {
     name: '辦公室日常', tag: 'OFFICE',
     questions: [
-      { sentence: 'Please _____ the attached report before the meeting.', answer: 'review', choices: ['review', 'attend', 'repair'], hint: '檢視附件報告：review the report' },
-      { sentence: 'Could you _____ a message for Ms. Chen?', answer: 'leave', choices: ['leave', 'lend', 'arrive'], hint: '留言給某人：leave a message' },
+      { sentence: 'Please _____ the attached report before the meeting.', answer: 'review', choices: ['review', 'attend', 'repair'], hint: '會議前需要先看過附件中的報告。' },
+      { sentence: 'Could you _____ a message for Ms. Chen?', answer: 'leave', choices: ['leave', 'lend', 'arrive'], hint: '這裡是請對方幫忙把訊息轉交給某人。' },
     ],
   },
   {
     name: '商務旅行', tag: 'TRAVEL',
     questions: [
-      { sentence: 'Please arrive at the gate _____ thirty minutes before departure.', answer: 'at least', choices: ['at least', 'instead', 'although'], hint: '至少提前三十分鐘：at least thirty minutes' },
-      { sentence: 'The flight was delayed _____ heavy rain.', answer: 'because of', choices: ['because of', 'despite', 'beside'], hint: '因為大雨：because of + 名詞' },
+      { sentence: 'Please arrive at the gate _____ thirty minutes before departure.', answer: 'at least', choices: ['at least', 'instead', 'although'], hint: '想想登機前，抵達時間通常要預留多少提前量。' },
+      { sentence: 'The flight was delayed _____ heavy rain.', answer: 'because of', choices: ['because of', 'despite', 'beside'], hint: '後半句說明延誤的天氣原因；判斷兩者是因果還是讓步關係。' },
     ],
   },
   {
     name: '人才招募', tag: 'CAREERS',
     questions: [
-      { sentence: 'Applicants are asked to _____ a résumé with the application.', answer: 'submit', choices: ['submit', 'attend', 'install'], hint: '提交履歷：submit a résumé' },
-      { sentence: 'The new manager has extensive _____ in sales.', answer: 'experience', choices: ['experience', 'experienced', 'expenses'], hint: '豐富的銷售經驗：extensive experience' },
+      { sentence: 'Applicants are asked to _____ a résumé with the application.', answer: 'submit', choices: ['submit', 'attend', 'install'], hint: '這裡是履歷與申請文件的常見搭配，表示把文件交給公司。' },
+      { sentence: 'The new manager has extensive _____ in sales.', answer: 'experience', choices: ['experience', 'experienced', 'expenses'], hint: '句子談的是工作資歷，這個位置需要名詞。' },
     ],
   },
   {
     name: '訂單與出貨', tag: 'ORDERS',
     questions: [
-      { sentence: 'We will _____ your order within two business days.', answer: 'process', choices: ['process', 'attend', 'replace'], hint: '處理訂單：process an order' },
-      { sentence: 'The items are currently _____, but will arrive next week.', answer: 'out of stock', choices: ['out of stock', 'on schedule', 'in advance'], hint: '目前缺貨：out of stock' },
+      { sentence: 'We will _____ your order within two business days.', answer: 'process', choices: ['process', 'attend', 'replace'], hint: '主詞是訂單；想想公司收到訂單後會先進行什麼程序。' },
+      { sentence: 'The items are currently _____, but will arrive next week.', answer: 'out of stock', choices: ['out of stock', 'on schedule', 'in advance'], hint: '商品目前無法立即供貨，不過預計下週就會到。' },
     ],
   },
   {
     name: '會議與行程', tag: 'MEETINGS',
     questions: [
-      { sentence: 'The meeting has been _____ until Friday.', answer: 'postponed', choices: ['postponed', 'enclosed', 'improved'], hint: '會議延期至週五：be postponed until Friday' },
-      { sentence: 'Please let us know whether you can _____ the conference.', answer: 'attend', choices: ['attend', 'intend', 'arrange'], hint: '出席研討會：attend a conference' },
+      { sentence: 'The meeting has been _____ until Friday.', answer: 'postponed', choices: ['postponed', 'enclosed', 'improved'], hint: '行程往後挪到週五，留意這裡使用完成式被動語態。' },
+      { sentence: 'Please let us know whether you can _____ the conference.', answer: 'attend', choices: ['attend', 'intend', 'arrange'], hint: '句子詢問能否出席，找一個可以直接搭配活動名稱的動詞。' },
     ],
   },
 ];
