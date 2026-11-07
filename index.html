@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f6fb" />
+    <title>TOEIC Quest — 多益英文闖關</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.90.0/dist/phaser.min.js"></script>
+    <script defer src="game.js"></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="TOEIC Quest 首頁">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M8 8.5 34 5 23.4 34l-5.2-12.1L8 8.5Z" fill="currentColor" />
+              <path d="m18.2 21.9 8.4-8.5" stroke="#fff" stroke-width="2.4" stroke-linecap="round" />
+            </svg>
+          </span>
+          <span class="brand-copy"><strong>TOEIC QUEST</strong><small>ENGLISH ARCADE</small></span>
+        </a>
+        <div class="topbar-note"><span class="live-dot"></span> LEARN BY PLAYING</div>
+      </header>
+
+      <section class="intro-row" id="top">
+        <div>
+          <p class="eyebrow">多益英文・五關挑戰</p>
+          <h1>跑進職場英文，<span>把答案帶回來。</span></h1>
+        </div>
+        <p class="intro-copy">閱讀句子、跳躍前進，蒐集正確選項。<br />每答對一題 <b>+5</b>，答錯 <b>−5</b>。</p>
+      </section>
+
+      <nav class="stage-nav" aria-label="五個闖關主題" id="stage-nav"></nav>
+
+      <section class="question-panel" aria-live="polite">
+        <div class="question-index"><span class="index-label">YOUR MISSION</span><span class="index-number" id="stage-number">—</span></div>
+        <div class="question-copy">
+          <div class="question-meta"><span id="stage-name">準備開始</span><span class="meta-divider">·</span><span id="question-count">先看看下方操作方式</span></div>
+          <h2 id="question-text">找到正確答案，開始你的多益闖關！</h2>
+          <p id="question-hint">碰到答案卡即可作答；跳上平台蒐集不同位置的選項。</p>
+        </div>
+        <div class="score-card" aria-label="目前分數">
+          <span class="score-label">SCORE</span>
+          <strong id="score">00</strong>
+          <span class="score-unit">PTS</span>
+        </div>
+      </section>
+
+      <section class="game-card" aria-label="遊戲區">
+        <div class="game-topline">
+          <div class="world-label"><span class="world-icon">✦</span><span id="world-title">WORD RUNNER</span></div>
+          <div class="world-tip"><span class="tip-key">SPACE</span> 跳躍 <span class="tip-separator">/</span> 蒐集答案卡</div>
+        </div>
+        <div class="game-viewport">
+          <div id="game" aria-label="Phaser 英文闖關遊戲畫面"></div>
+          <div class="game-overlay" id="game-overlay">
+            <div class="overlay-card">
+              <div class="overlay-symbol" id="overlay-symbol">✦</div>
+              <p class="overlay-kicker" id="overlay-kicker">READY, RUNNER?</p>
+              <h2 id="overlay-title">準備好出發了嗎？</h2>
+              <p id="overlay-copy">用方向鍵移動、按空白鍵跳躍。碰到正確答案卡，就能前往下一題。</p>
+              <button type="button" class="start-button" id="start-button">開始闖關 <span aria-hidden="true">→</span></button>
+              <p class="overlay-footnote">5 關 · 10 題 · 每題答對 +5 分</p>
+            </div>
+          </div>
+          <div class="toast" id="toast" aria-live="polite"></div>
+        </div>
+        <div class="game-footer">
+          <div class="controls-list">
+            <span class="control"><kbd>←</kbd><kbd>→</kbd><span>移動</span></span>
+            <span class="control"><kbd>A</kbd><kbd>D</kbd><span>移動</span></span>
+            <span class="control"><kbd>SPACE</kbd><span>跳躍</span></span>
+          </div>
+          <p>錯誤選項會暫時鎖定，繼續找出正確答案。</p>
+        </div>
+      </section>
+
+      <footer class="page-footer"><span>TOEIC QUEST</span><span>學英文，也可以很好玩。</span></footer>
+    </main>
+  </body>
+</html>
